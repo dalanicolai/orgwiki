@@ -1,5 +1,4 @@
-;;; packages.el --- orgwiki layer packages file for Spacemacs.
-;;
+;;; packages.el --- orgwiki layer packages file for Spacemacs. 
 ;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
 ;;
 ;; Author: Swaroop C H <swaroop@swaroopch.com>
@@ -14,9 +13,10 @@
 ;;; Code:
 
 (defconst orgwiki-packages
-  '((org-wiki :location (recipe
-                         :fetcher github
-                         :repo "caiorss/org-wiki"))))
+  '((org-wiki :location local)))
+              ;; (recipe
+              ;;            :fetcher github
+              ;;            :repo "caiorss/org-wiki"))))
 
 
 (defun orgwiki/init-org-wiki ()
@@ -31,9 +31,9 @@
               ;; (h)ome
               "aowh" 'org-wiki-index
               ;; (i)nsert link
-              "aowi" 'org-wiki-insert
+              "aowi" 'org-wiki-insert-link
               ;; (n)ew page
-              "aown" 'org-wiki-make-page)
+              "aown" 'org-wiki-new)
             (when (configuration-layer/layer-usedp 'helm)
               (spacemacs/set-leader-keys
                 ;; (j)ump to page
