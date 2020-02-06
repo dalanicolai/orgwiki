@@ -33,7 +33,7 @@
               ;; (i)nsert link
               "aowi" 'org-wiki-insert-link
               ;; (n)ew page
-              "aown" 'org-wiki-new)
+              "aown" 'org-wiki-insert-new)
             (when (configuration-layer/layer-usedp 'helm)
               (spacemacs/set-leader-keys
                 ;; (j)ump to page
