@@ -12,7 +12,7 @@ Extracted from: https://github.com/swaroopch/spacemacs
 Make a personal wiki using OrgMode!
 
 * Install
-To use this configuration layer, clone (or copy) it to your =.emacs.d/private= directory. Subsequently add it to your =~/.spacemacs= file. You will need to add =orgwiki= to the existing =dotspacemacs-configuration-layers= list in this
+To use this configuration layer, clone (or copy) it to your =.emacs.d/private= directory. Subsequently add it to your =~/.spacemacs= file. You should to add =orgwiki= to the existing =dotspacemacs-configuration-layers= list in that
 file. To set also the location of your wiki instead of adding =orgwiki= add =(orgwiki :variables org-wiki-location "~/org/wiki")=, of course setting your own prefered location, to the list
 
 * Key bindings
