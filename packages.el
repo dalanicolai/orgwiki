@@ -13,10 +13,9 @@
 ;;; Code:
 
 (defconst orgwiki-packages
-  '((org-wiki :location local)))
-              ;; (recipe
-              ;;            :fetcher github
-              ;;            :repo "caiorss/org-wiki"))))
+  '((org-wiki :location (recipe
+                           :fetcher github
+                           :repo "dalanicolai/org-wiki"))))
 
 
 (defun orgwiki/init-org-wiki ()
